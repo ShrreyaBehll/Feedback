@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            style="@style/AlertDialog.AppCompat" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_thankyou"
+            android:gravity="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:paddingTop="10dp"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/feedback_name"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/feedback_emailid"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" We'd love to know your Views"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_orange_dark"
+
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How was your overall experience?"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <com.willy.ratingbar.ScaleRatingBar
+                    android:id="@+id/scale_rating1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:srb_rating="1"
+                    app:srb_stepSize="1"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How was the service offered?"
+                    android:textSize="20sp"
+                    />
+                <com.willy.ratingbar.ScaleRatingBar
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:srb_rating="1"
+                    app:srb_stepSize="1"/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How much did you like the ambience?"
+                    android:textSize="20sp"
+                    />
+                <com.willy.ratingbar.ScaleRatingBar
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:srb_rating="1"
+                    app:srb_stepSize="1"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How was the table ordering system?"
+                    android:textSize="20sp"
+                    />
+                <com.willy.ratingbar.ScaleRatingBar
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:srb_rating="1"
+                    app:srb_stepSize="1"/>
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback_submit"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_orange_dark"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
