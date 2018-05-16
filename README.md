@@ -1,2 +1,3 @@
 # Feedback
-Application to take feedback from the customers.
+-Android Application to take feedback from the customers.
+-Includes animated Star rating
